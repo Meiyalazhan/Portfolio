@@ -11,10 +11,8 @@
 <div class="website-wrapper">
 <nav class="main-navbar">
 	<div class="navbar-wrapper">
-		<!-- <p class="animate-portfolio">Portfolio</p> -->
-		<!-- <ul class="nav-links-left"></ul> -->
 		<ul class="nav-links-right">
-			<li><a href="#" style="--color: #1e9bff"><span>Home </span><i></i></a></li>
+			<li><a href="#">Home</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#skills">Skills</a></li>
 			<li><a href="#Education">Education</a></li>
@@ -38,13 +36,10 @@
 				<h1>Meiyalazhan</h1>
 				<h1 class="content">Meiyalazhan</h1>
 			</div>
-			<!-- <div class="name-text">
-			<h1 class="animate-name">Meiyalazhan</h1>
-		</div> -->
 			<h4>I'm a Student</h4>
 			<p>Aspire to became a front-end web Developer.</p>
-			<form action="https://drive.google.com/file/d/13qSwF7h17hDXhOz0et_O4ytuxwcEJbOY/view?usp=drive_link">
-				<button class="btn download-cv-btn">Download CV</button>
+			<form action="https://drive.google.com/file/d/13qSwF7h17hDXhOz0et_O4ytuxwcEJbOY/preview" target="_blank">
+				<button class="btn download-cv-btn">My Resume</button>
 			</form>
 		</div>
 	</div>
@@ -166,11 +161,26 @@
 	</header>
 	<div class="project-container">
 		<div class="Project-1">
-			<img src="images/note-taking.png">
-			<p class="project-details">Notes</p>
+			<div class="imgBx"><img src="images/note-taking.png"></div>
+			<div class="glass">
+				<a href="https://meiyalazhan.github.io/Note-log/"><span class="project-details">Note Log</span></a>
+				<ul>
+					<li style="--color: #FF5733"><ion-icon name="logo-html5"></ion-icon></li>
+					<li style="--color: #1e9bff"><ion-icon name="logo-css3"></ion-icon></li>
+				</ul>
+			</div>
 		</div>
-		<!-- <div class="Project-1"><img src="">Project 2</div>
-		<div class="Project-1"><img src="">Project 3</div> -->
+		<div class="Project-1">
+			<div class="imgBx"><img src="images/To-Do List.png"></div>
+			<div class="glass">
+				<a href="https://meiyalazhan.github.io/To-Do-List/"><span class="project-details">To-Do List</span></a>
+				<ul>
+					<li style="--color: #FF5733"><ion-icon name="logo-html5"></ion-icon></li>
+					<li style="--color: #1e9bff"><ion-icon name="logo-css3"></ion-icon></li>
+				</ul>
+			</div>
+		</div>
+		<!-- <div class="Project-1"><img src="">Project 3</div> -->
 	</div>
 </section>
 <section class="contact" >
@@ -231,10 +241,24 @@
 			</div>
 
 			<div class="contact-social-media">
-				<a href="https://github.com/Meiyalazhan"><i class="fa-brands fa-github"></i></a>
-				<a href="https://www.linkedin.com/in/meiyalazhan-k-98473a256/"><i class="fa-brands fa-linkedin-in"></i></a>
+				<li class="icon Github">
+					<span class="tooltip">Github</span>
+					<a href="https://github.com/Meiyalazhan" target="_blank"><i class="fa-brands fa-github"></i></a>
+				</li>
+				<li class="icon Linkedin">
+					<span class="tooltip">Linkedin</span>
+					<a href="https://www.linkedin.com/in/meiyalazhan-k-98473a256/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+				</li>
+				<li class="icon Telegram">
+					<span class="tooltip">Telegram</span>
+					<a href="https://t.me/Artemis_47" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+				</li>
+				<li class="icon Whatsapp">
+					<span class="tooltip">Whatsapp</span>
+					<a href="https://wa.me/918438537318" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+				</li>
 			</div>
-
+			
 		</div>
 	</div>
 </section>
@@ -242,6 +266,8 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

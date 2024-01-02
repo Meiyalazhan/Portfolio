@@ -34,10 +34,3 @@ function imageVisibility(){
 	profileImage.classList.toggle('hide');
 }
 
-$('.portfolio-contents').magnificPopup({
-	delegate: '.overlay a',
-	type: 'image',
-	gallery:{
-		enabled: true
-	}
-})
