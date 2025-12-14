@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.cdnfonts.com/css/agustina" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init({
+				publicKey: "ANtz8-M8GlpeGbtti",
+			});
+		})();
+	</script>
+	<title>Meiyalazhan K - Portfolio</title>
+	<link rel="icon" type="image/png" href="images/Web-Icon.png">
+</head>
+
+<body>
+	<div class="website-wrapper">
+
+		<nav class="main-navbar">
+			<div class="click-effect"></div>
+			<div class="navbar-wrapper">
+				<a href="#" class="logo">
+					<span class="grey-color"> &lt;</span>
+					<span class="logo-name">Meiyalazhan</span>
+					<span class="grey-color">/&gt;</span>
+				</a>
+				<ul class="nav-links-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#Education">Education</a></li>
+					<li><a href="#project">Project</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="dark-mode-btn">
+					<input type="checkbox" class="checkbox" id="checkbox" aria-label="Toggle dark mode">
+					<label for="checkbox" class="checkbox-label">
+						<i class="fas fa-sun"></i>
+						<i class="fas fa-moon"></i>
+						<span class="ball"></span>
+					</label>
+				</div>
+				<div class="menu-cancel-btn">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+			<div class="menu-btn">
+				<i class="fa-solid fa-bars-staggered"></i>
+			</div>
+			<div class="Scrollprogress-container">
+				<div class="Scrollprogress-bar" id="myScrollBar"></div>
+			</div>
+		</nav>
+
+		<section class="home" id="home">
+			<div class="svg-top"></div>
+			<div class="banner">
+				<div class="banner-text">
+					<h3>Hello, I'm</h3>
+					<div class="name-text">
+						<h1>Meiyalazhan</h1>
+						<h1 class="content">Meiyalazhan</h1>
+					</div>
+					<h4>a <span class="typing-text"></span><span class="typing-cursor">|</span></h4>
+					<p>Aspiring Full Stack Developer 🚀 with hands-on experience in building dynamic web applications
+						using modern JavaScript technologies.</p>
+
+					<div class="social-media-div">
+						<div class="homeIcons">
+							<a href="https://github.com/Meiyalazhan" target="_blank" rel="noopener noreferrer">
+								<img src="images/Social Media/github_png_icon.png" alt="GitHub Profile">
+							</a>
+						</div>
+						<div class="homeIcons">
+							<a href="https://www.linkedin.com/in/meiyalazhank" target="_blank"
+								rel="noopener noreferrer">
+								<img src="images/Social Media/linkedin_2_new.svg" alt="LinkedIn Profile">
+							</a>
+						</div>
+						<div class="homeIcons">
+							<a href="mailto:gowtham.mei101@gmail.com" target="_blank" rel="noopener noreferrer">
+								<img src="images/Social Media/gmail_icon_new.svg" alt="Email">
+							</a>
+						</div>
+						<div class="homeIcons">
+							<a href="https://wa.me/918438537318" target="_blank" rel="noopener noreferrer">
+								<img src="images/Social Media/whatsapp.svg" alt="WhatsApp">
+							</a>
+						</div>
+					</div>
+					<form action="https://drive.google.com/file/d/13qSwF7h17hDXhOz0et_O4ytuxwcEJbOY/preview"
+						target="_blank">
+						<button type="submit" class="btn download-cv-btn">My Resume</button>
+					</form>
+				</div>
+			</div>
+			<div class="svg-bottom"></div>
+		</section>
+		<section class="about" id="about">
+			<div class="about-contents-wrapper">
+				<header class="section-heading scroll-reveal">
+					<h1>About Me</h1>
+				</header>
+				<div class="about-description">
+					<div class="about-col-2 scroll-reveal-right" data-delay="200">
+						<img src="images/About.jpeg" alt="Meiyalazhan K - Profile Photo" loading="lazy">
+					</div>
+					<div class="about-col-1 scroll-reveal-left" data-delay="100">
+						<h2>Student</h2>
+						<p>I am a dedicated Computer Science student and passionate Frontend Developer with a strong
+							enthusiasm for continuous learning.
+							I thrive on problem-solving and coding challenges, always bringing 100% dedication to every
+							project I undertake.
+							My passion for technology drives me to continuously expand my knowledge and refine my
+							skills.
+							Currently pursuing a Bachelor's degree in Computer Science at K.S.Rangasamy College of
+							Engineering, Tiruchengode.
+						</p>
+						<div class="about-personal-info">
+							<div><span>Name:</span><span>Meiyalazhan K</span></div>
+							<div><span>Age:</span><span id="age"></span></div>
+							<div><span>Email:</span><span>gowtham.mei101@gmail.com</span></div>
+							<div><span>Address:</span><span>Namakkal District, Tamil Nadu, India</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="Skills-Section" id="skills">
+			<header class="section-heading scroll-reveal">
+				<h1>My Skills</h1>
+			</header>
+			<div class="about-skills-container scroll-reveal" data-delay="200">
+
+				<div class="software-skills-main-div">
+					<ul class="dev-icons">
+						<li class="software-skill-inline" name="java">
+							<i class="fa-brands fa-java"></i>
+							<p>Java</p>
+						</li>
+						<li class="software-skill-inline" name="html5">
+							<i class="fab fa-html5"></i>
+							<p>HTML5</p>
+						</li>
+						<li class="software-skill-inline" name="css3">
+							<i class="fab fa-css3-alt"></i>
+							<p>CSS3</p>
+						</li>
+						<li class="software-skill-inline" name="JavaScript">
+							<i class="fab fa-js"></i>
+							<p>JavaScript</p>
+						</li>
+						<li class="software-skill-inline" name="Bootstrap5">
+							<i class="fa-brands fa-bootstrap"></i>
+							<p>Bootstrap5</p>
+						</li>
+						<li class="software-skill-inline" name="ReactJS">
+							<i class="fab fa-react"></i>
+							<p>ReactJS</p>
+						</li>
+						<li class="software-skill-inline" name="SQL">
+							<i class="fa-solid fa-database"></i>
+							<p>SQL</p>
+						</li>
+						<!-- <li class="software-skill-inline" name="Figma">
+							<i class="fa-brands fa-figma"></i>
+							<p>Figma</p>
+						</li> -->
+					</ul>
+					<ul class="dev-icons">
+						<li class="software-skill-inline">
+							<span>Others</span>
+						</li>
+					</ul>
+					<ul class="dev-icons Learning-icons">
+						<li class="software-skill-inline" name="git">
+							<i class="fab fa-git"></i>
+							<p>Git</p>
+						</li>
+						<li class="software-skill-inline" name="PostmanApi">
+							<i class="fa-solid fa-gear"></i>
+							<p>Postman</p>
+						</li>
+						<li class="software-skill-inline" name="VScode">
+							<i class="fa-solid fa-code"></i>
+							<p>VS Code</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="resume" id="Education">
+			<header class="section-heading scroll-reveal">
+				<h1>Education</h1>
+			</header>
+			<div class="resume-row">
+				<div class="resume-col resume-col-left">
+					<div class="resume-col-contents">
+
+						<div class="resume-box scroll-reveal-left" data-delay="100">
+							<div class="timeline-dot"></div>
+							<div class="date-box">
+								<h4>Oct 2021 - May 2025</h4>
+							</div>
+							<div class="resume-desc">
+								<h2>Bachelor of Engineering in Computer Science</h2>
+								<p>Pursuing B.E. Computer Science and Engineering program at K.S.Rangasamy College of
+									Engineering,
+									with a current CGPA of 8.05 (up to the 6th semester).</p>
+							</div>
+						</div>
+
+						<div class="resume-box scroll-reveal-left" data-delay="200">
+							<div class="timeline-dot"></div>
+							<div class="date-box">
+								<h4>2019 - 2021</h4>
+							</div>
+							<div class="resume-desc">
+								<h2>Higher Secondary Certificate</h2>
+								<p>Completed HSC in Shankar Higher Secondary School
+									at Sankari West, Tamil Nadu, India.</p>
+							</div>
+						</div>
+
+						<div class="resume-box scroll-reveal-left" data-delay="300">
+							<div class="timeline-dot"></div>
+							<div class="date-box">
+								<h4>2018 - 2019</h4>
+							</div>
+							<div class="resume-desc">
+								<h2>Secondary School Leaving Certificate</h2>
+								<p>Completed SSLC in Shankar Higher Secondary School
+									at Sankari West, Tamil Nadu, India.</p>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="project">
+			<div id="project"></div>
+			<header class="section-heading scroll-reveal">
+				<h1>Projects</h1>
+			</header>
+			<div class="project-container scroll-reveal-scale" data-delay="200">
+				<div class="projectBox always-visible"
+					onclick="window.open('https://meiyalazhan.github.io/Bike-Website', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Bike Fusion</h3>
+						</div>
+						<p class="repo-description">
+							A comprehensive motorcycle showcase website featuring detailed specifications, features, and
+							high-quality images that allows users to
+							easily browse and compare different models through an intuitive, responsive interface.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #cbcb41;"></div>
+									<p>JSON (Data)</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox always-visible"
+					onclick="window.open('https://meiyalazhan.github.io/Note-log', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Note Log</h3>
+
+						</div>
+						<p class="repo-description">
+							A feature-rich notes application that supports multiple entries per note with an integrated
+							Text Saver feature,
+							enabling users to seamlessly create, edit, and delete notes with persistent storage.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox always-visible"
+					onclick="window.open('https://meiyalazhan.github.io/Todo-App', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">To Do List</h3>
+
+						</div>
+						<p class="repo-description">
+							A real-time to-do list application built with Firebase integration, featuring intuitive task
+							management
+							with add/remove functionality, date highlighting, and visual strike-through effects to track
+							completion status.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #FF9100"></div>
+									<p>Firebase</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox always-visible"
+					onclick="window.open('https://meiyalazhan.github.io/MultiSearch', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">MultiSearch</h3>
+
+						</div>
+						<p class="repo-description">
+							MultiSearch is a productivity-focused web tool that lets you perform bulk searches across
+							multiple search engines
+							(Google, YouTube, Wikipedia, etc.) simultaneously. Designed for researchers, content
+							creators, and power users,
+							it helps streamline workflows by automating repetitive search tasks while providing
+							fine-grained
+							control over search parameters.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox always-visible"
+					onclick="window.open('https://meiyalazhan.github.io/Image-to-text-converter', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Image to Text Converter</h3>
+						</div>
+						<p class="repo-description">
+							Image to text converter extracts text from images with 100% accuracy by using Tesseract-OCR
+							technology.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #6f42c1;"></div>
+									<p>Tesseract.js</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox hidden"
+					onclick="window.open('https://meiyalazhan.github.io/Live-Word-Counter', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Live Word Counter</h3>
+						</div>
+						<p class="repo-description">
+							Live Word Counter is to count the number of words and characters of the text you entered
+							above, as you type, the result will be shown above the text box, the result will update in
+							real-time.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox always-visible"
+					onclick="window.open('https://github.com/Meiyalazhan/Java-Console-Project', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Expense and Income Tracker</h3>
+						</div>
+						<div class="tech-badges">
+							<span class="tech-badge">Java</span>
+							<span class="tech-badge">Console App</span>
+							<span class="tech-badge">OOP</span>
+						</div>
+						<p class="repo-description">
+							Java based console application to track personal finance by managing transactions and
+							budgets, providing real time budget status updates and notifications.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 90, 90);"></div>
+									<p>Java</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox hidden"
+					onclick="window.open('https://github.com/Meiyalazhan/Employee-Agreement-Management-Service', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Employee Agreement Management Service</h3>
+						</div>
+						<p class="repo-description">
+							This project is a Spring Boot-based RESTful service for managing employment agreements. It
+							includes features such as adding, updating, retrieving, and deleting employment agreements,
+							with validation and exception handling.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: rgb(39, 248, 57);"></div>
+									<p>Spring Boot</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox hidden"
+					onclick="window.open('https://meiyalazhan.github.io/Random-Colour-Generator/', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Random Colour Generator</h3>
+						</div>
+						<p class="repo-description">
+							This project is a simple web application that generates random colors in both hexadecimal
+							(hex) and RGB formats.
+							It allows users to generate colors.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox hidden"
+					onclick="window.open('https://meiyalazhan.github.io/Text-to-Speech-Converter/', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Text to Speech Converter</h3>
+						</div>
+						<p class="repo-description">
+							Text to Speech Converter is a simple web application that utilizes the Web Speech API,
+							specifically the window.speechSynthesis interface, to convert user-inputted text into spoken
+							words.
+							This tool allows users to enter any text and have it read aloud in a selected voice, with
+							adjustable pitch and rate settings.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #00bcd4;"></div>
+									<p>Web API</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox hidden"
+					onclick="window.open('https://meiyalazhan.github.io/Random-Number-Guess/', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">Number Guessing Game</h3>
+						</div>
+						<p class="repo-description">
+							This is a Number Guessing Game where players try to guess a randomly generated number within
+							a specified range.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="projectBox hidden"
+					onclick="window.open('https://meiyalazhan.github.io/CGPA-GPA-Calculator/', '_blank')">
+					<div class="project-content">
+						<div class="repo-name-div">
+							<svg class="repo-svg" aria-hidden="true" class="octicon repo-svg" height="20" role="img"
+								viewBox="0 0 12 16" width="14">
+								<path fill-rule="evenodd"
+									d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+								</path>
+							</svg>
+							<h3 class="repo-name">CGPA and GPA Calculator</h3>
+						</div>
+						<p class="repo-description">
+							The CGPA and GPA Calculator is a academic tool designed to accurately compute Grade Point
+							Average (GPA)
+							and Cumulative Grade Point Average (CGPA) based on academic performance.
+						</p>
+						<div class="repo-stats">
+							<div class="repo-left-stat">
+								<span>
+									<div class="language-color" style="background-color: #e34c26;"></div>
+									<p>HTML</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: #264de4;"></div>
+									<p>CSS</p>
+								</span>
+								<span>
+									<div class="language-color" style="background-color: rgb(241, 224, 90);"></div>
+									<p>JavaScript</p>
+								</span>
+							</div>
+							<div class="repo-right-stat">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="show-more-container">
+					<button id="showMoreBtn" class="show-more-btn btn">Show More</button>
+				</div>
+			</div>
+		</section>
+		<section class="contact">
+			<header class="section-heading scroll-reveal" id="contact">
+				<h1>Contact</h1>
+			</header>
+			<div class="contact-contents scroll-reveal" data-delay="200">
+				<div class="contact-col contact-col-1">
+					<h1>Reach Out to me!</h1>
+					<form class="contact-form">
+						<div class="input-element name-input">
+							<input type="text" id="name" required="required" placeholder="Your Name" autocomplete="off">
+						</div>
+
+						<div class="input-element email-input">
+							<input type="email" id="email" required="required" placeholder="Your Email"
+								autocomplete="off">
+						</div>
+
+						<div class="text-area">
+							<textarea required="required" id="message" placeholder="Your Message"></textarea>
+						</div>
+
+						<div class="form-button-container">
+							<button type="button" class="btn form-btn" onclick="sendMail()">Send Message</button>
+						</div>
+					</form>
+				</div>
+				<div class="contact-col contact-col-2">
+
+					<div class="contact-item">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="contact-text">
+							<span>My Address</span>
+							<span>Namakkal District, Tamilnadu, India</span>
+						</div>
+					</div>
+
+					<div class="contact-item">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="contact-text">
+							<span>Phone Number</span>
+							<span>+91 84385 37318</span>
+						</div>
+					</div>
+
+					<div class="contact-item">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="contact-text">
+							<span>Email Address</span>
+							<span>gowtham.mei101@gmail.com</span>
+						</div>
+					</div>
+
+					<ul class="contact-social-media">
+						<li class="icon Github">
+							<span class="tooltip">Github</span>
+							<a href="https://github.com/Meiyalazhan" target="_blank" rel="noopener noreferrer" id="git"
+								aria-label="Visit my GitHub profile"><i class="fa-brands fa-github"></i></a>
+						</li>
+						<li class="icon Linkedin">
+							<span class="tooltip">Linkedin</span>
+							<a href="https://www.linkedin.com/in/meiyalazhan-k-98473a256/" target="_blank"
+								rel="noopener noreferrer" aria-label="Visit my LinkedIn profile"><i
+									class="fa-brands fa-linkedin-in"></i></a>
+						</li>
+						<li class="icon Telegram">
+							<span class="tooltip">Telegram</span>
+							<a href="https://t.me/Artemis_47" target="_blank" rel="noopener noreferrer"
+								aria-label="Contact me on Telegram"><i class="fa-brands fa-telegram"></i></a>
+						</li>
+						<li class="icon Whatsapp">
+							<span class="tooltip">Whatsapp</span>
+							<a href="https://wa.me/918438537318" target="_blank" rel="noopener noreferrer"
+								aria-label="Contact me on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+						</li>
+				</div>
+
+			</div>
+	</div>
+	</section>
+	</div>
+
+	<!-- External Link Modal -->
+	<div id="linkModal" class="link-modal">
+		<div class="link-modal-content">
+			<button class="link-modal-close" aria-label="Close modal">&times;</button>
+			<div class="link-modal-icon">
+				<i class="fas fa-external-link-alt"></i>
+			</div>
+			<h2>Open link?</h2>
+			<p class="link-modal-message">
+				You'll be redirected to an external page in a new tab:
+			</p>
+			<p class="link-modal-url">« <span id="externalUrl"></span> »</p>
+			<p class="link-modal-confirm">Please confirm if you'd like to continue.</p>
+			<div class="link-modal-buttons">
+				<button class="link-modal-btn btn-cancel">
+					<i class="fas fa-times"></i> Cancel
+				</button>
+				<button class="link-modal-btn btn-proceed">
+					Proceed <i class="fas fa-arrow-right"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
